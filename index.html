@@ -3,7 +3,6 @@
 <head>
   <meta metacharset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RickAndMortyAPi</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
     integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
@@ -14,11 +13,11 @@
   <div class="text">
     <header>
       <img class="header" src="image/backgroud.png">
+      <div class="search">
+        <input type="search" placeholder="Search character name..." id="search" class="search__input" data-search>
+        <button class="search__button" data-button >
+      </div>
     </header>
-    <div class="search">
-      <input type="search" placeholder="Search character name..." id="search" class="search__input" data-search>
-      <button class="search__button" data-button >
-    </div>
     <div class="load" data-load ></div>  
     <section class="cards wrap" id="card" data-list></section>
     <div class="text-error" data-error></div>
